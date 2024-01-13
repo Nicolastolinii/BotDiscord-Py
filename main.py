@@ -96,4 +96,4 @@ async def helper(ctx):
 
 
 
-bot.run('MTE5Mjk2ODU4NTQzNDM3MDA3OA.GNHbGF.kmIhYQqk82SE6Vo2RqgK256VQ9KLBRtdRpZrmg')
+bot.run('TOKEN-BOT-DISCORD')

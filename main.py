@@ -2,9 +2,10 @@ import discord
 from discord.ext import commands
 from utils.bot_utils import setup_bot,typing
 from command.command_handlers import *
+from decouple import config
 
 # pybot\Scripts\activate
-
+DISCORD_TOKEN = config('DISCORD_TOKEN')
 bot = setup_bot()
 voice_context = {}
 @bot.event
@@ -96,4 +97,4 @@ async def helper(ctx):
 
 
 
-bot.run('TOKEN-BOT-DISCORD')
+bot.run('DISCORD_TOKEN')

@@ -16,6 +16,25 @@ Antes de ejecutar el bot, asegúrate de tener lo siguiente instalado:
 - Python 3.7 o superior
 - Biblioteca Discord.py (`pip install discord.py`)
 - [python-decouple](https://pypi.org/project/python-decouple/) (`pip install python-decouple`)
+- [FFmpeg](https://ffmpeg.org/download.html)
+
+### Instalación de FFmpeg
+Este bot utiliza FFmpeg para procesar y reproducir archivos de audio. Asegúrate de tener FFmpeg instalado en tu sistema antes de ejecutar el bot.
+
+#### Windows
+1. Descarga FFmpeg desde [ffmpeg.org](https://ffmpeg.org/download.html).
+2. Extrae el archivo zip descargado.
+3. Agrega la ruta de la carpeta bin de FFmpeg al PATH del sistema.
+
+#### Linux
+```bash
+sudo apt-get update
+sudo apt-get install ffmpeg
+```
+#### MacOS
+```brew install ffmpeg```
+
+Si ya tienes FFmpeg instalado, puedes omitir esta sección.
 
 ## Configuración
 1. Crea un nuevo bot de Discord en el [Portal de Desarrolladores de Discord](https://discord.com/developers/applications).

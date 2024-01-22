@@ -11,7 +11,7 @@ Este es un bot simple de Discord diseñado para reproducir música en canales de
 - Desconectarse del canal de voz
 - Mostrar información del usuario
 
-## Prerrequisitos
+## Pre-requisitos
 Antes de ejecutar el bot, asegúrate de tener lo siguiente instalado:
 - Python 3.7 o superior
 - Biblioteca Discord.py (`pip install discord.py`)

@@ -45,6 +45,9 @@ async def play(ctx):
     guild_id = ctx.guild.id
     if ctx.author == bot.user:
                 return
+    if not ctx.author.voice:
+        await ctx.send("¡Debes estar en un canal de voz para usar este comando!")
+        return
     if ctx.author.voice:
         channel = ctx.author.voice.channel
         if guild_id in voice_context and voice_context[guild_id].is_connected():
@@ -52,8 +55,7 @@ async def play(ctx):
             voice_client = voice_context[guild_id]
         else:
             voice_context[guild_id] = await channel.connect()
-            voice_client = voice_context[guild_id]
-            # await ctx.channel.send(f'Joined {channel}')
+            voice_client = voice_context[guild_id] 
     await play_song_command(ctx,voice_client,bot)
 
 @bot.command(name='pause', aliases=['pa'])
@@ -97,4 +99,4 @@ async def helper(ctx):
 
 
 
-bot.run('DISCORD_TOKEN')
+bot.run(DISCORD_TOKEN)
